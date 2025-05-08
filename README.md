@@ -28,8 +28,7 @@ A Python-based **Invoice Generator** that creates professional PDF invoices with
 1. **Clone the repository** (if applicable):
 
    ```sh
-   git clone https://github.com/yourusername/invoice-generator.git
-   cd invoice-generator
+   https://github.com/Jabulente/Invoice-Generator.git
    ```
 2. **Install dependencies**:
 
@@ -98,7 +97,7 @@ Generated PDF includes:
 - **Summary Section** (Subtotal, Tax, Discount, Grand Total)
 - **Payment Details & Signature**
 
-![Invoice Preview](https://via.placeholder.com/600x400?text=Invoice+PDF+Preview) *(Replace with actual screenshot)*
+![Invoice Preview](Resources/Invoice.png)
 
 ---
 
