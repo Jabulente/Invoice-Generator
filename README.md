@@ -14,29 +14,17 @@
 
 A **Python-based Invoice Generator** designed to create **professional PDF invoices** for retail shops and businesses. This tool enables dynamic invoice creation with **customizable client and seller information**, **itemized product lists**, **automatic tax calculations**, and **payment summaries**, ensuring your invoicing process is accurate, efficient, and visually appealing. Built using the lightweight **FPDF library**, this project showcases both Python programming and practical document generation skills.
 
----
+
 
 ## 🚀 Features
 
-* **Dynamic Invoice Generation**
-  Automatically generates invoices with **unique invoice numbers**, current dates, and timestamps, reducing manual effort and avoiding duplicate invoice entries.
+* **Dynamic Invoices** – Auto-generated invoice numbers and dates.
+* **Custom Info** – Add client and seller details effortlessly.
+* **Itemized Billing** – Multiple products with quantity, price, and totals.
+* **Automatic Calculations** – Subtotal, taxes, discounts, and grand total computed.
+* **Professional Layout** – Clean headers, footers, and styled tables.
+* **PDF Export** – Save and share print-ready invoices.
 
-* **Customizable Client & Seller Information**
-  Input **“Invoice To”** and **“Invoice From”** details, including company names, addresses, and contact information. Perfect for retail shops, freelancers, and small businesses.
-
-* **Itemized Product List**
-  Add multiple products with **quantity, unit price, and total cost**, enabling clear and accurate billing for multiple items per invoice.
-
-* **Automatic Calculations**
-  Calculates **subtotals, taxes, discounts**, and **grand totals** automatically, ensuring invoices are precise and consistent.
-
-* **Professional Styling**
-  Generates PDFs with **clean layouts**, including **headers, footers**, and **zebra-striped tables** for readability and aesthetic appeal.
-
-* **PDF Export**
-  Easily export invoices as **print-ready PDF files**, suitable for emailing to clients or storing for business records.
-
----
 
 ## 🛠️ Tools, Libraries & Technology
 
@@ -46,35 +34,32 @@ A **Python-based Invoice Generator** designed to create **professional PDF invoi
 * **Datetime** – For automated date and timestamp generation
 * **Math Operations** – For subtotal, tax, discount, and grand total calculations
 
-This project demonstrates **practical application development**, **document automation**, and **Python programming proficiency**, making it an excellent showcase for portfolios and professional profiles.
-
----
-
 ## 💡 Usage
 
-1. **Install FPDF** (if not already installed):
+This project runs entirely on the Command-Line Interface (CLI)
+
+1. **Install Dependencies**
+   Ensure **FPDF** is installed:
 
 ```bash
-pip install fpdf
+pip install fpdf pandas
 ```
 
-2. **Run the Invoice Generator**:
+2. **Prepare Dataset**
+   Create or update your dataset with invoice information. Ensure the **data schema matches the expected fields** (e.g., seller info, client info, item details, tax, discount).
+
+3. **Configure Settings**
+   Update the configuration in the script to point to your dataset and adjust any necessary parameters.
+
+4. **Run the Invoice Generator**
 
 ```bash
-python invoice_generator.py
+python main.py
 ```
 
-3. **Enter Invoice Details**
+5. **Generate PDF Invoices**
+   The script reads your dataset, processes the information, and **outputs professional PDF invoices** in the configured folder.
 
-   * Seller information
-   * Client information
-   * List of items (name, quantity, price)
-   * Applicable tax and discount
-
-4. **Generate PDF**
-   The script automatically saves the invoice as a **PDF file** in your designated output folder.
-
----
 
 ## 🏆 Skills Demonstrated
 
